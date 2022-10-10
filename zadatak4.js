@@ -10,4 +10,5 @@
     }
 }
 djeljiv()
+// zadatak se moze rjesit i sa 2 polja za ljepsi ispis. 
     
