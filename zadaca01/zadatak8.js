@@ -1,14 +1,14 @@
-a= {a:1,b:2,c:3}
-b= {a:321,b:3,c:1}
+a = {a:1, b:3, c:4}
+b = {a:2, b:5, c:7}
 
-function sadrzi(){
-    if (a === b ){
-      
-        console.log("true")
-
+function isti(a,b){
+    for (const key of Object.keys(a)) {
+        const contains = Object.hasOwn(b, key);
+        if (!contains) {
+            return false;
+        }
     }
-    
-    
-
-
+    return true;
 }
+
+console.log(isti(a, b));
